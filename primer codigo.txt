@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+int x = 3;
+float res;
+double potencia = 2;
+float A = 1/(float) 2 * (x);
+float B = ((float) (3+x)/2)*(2*pow (x, potencia));
+float C = (float) (2+3) *x;
+res = (A + B) /C;
+printf("operaico :%f", res);
+return 0;
