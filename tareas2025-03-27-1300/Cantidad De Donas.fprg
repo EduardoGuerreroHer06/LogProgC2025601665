@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Cantidad De Donas"/>
+        <attribute name="authors" value="eduar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 09:03:13 p. m."/>
+        <attribute name="created" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDMtMjY7MDc6MDc6NDEgcC4gbS47MzAyMw=="/>
+        <attribute name="edited" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDMtMjY7MDk6MDM6MTMgcC4gbS47MTszMTI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CantidadDeDonas, PrecioDeDonas10, TotalAPagar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Cantidad De Donas Compradas&quot;" newline="True"/>
+            <input variable="CantidadDeDonas"/>
+            <if expression="cantidadDeDonas &gt;0">
+                <then>
+                    <if expression="cantidaddedonas &lt; 30">
+                        <then>
+                            <assign variable="cantidaddedonas" expression="cantidaddedonas * 10"/>
+                            <output expression="&quot;total a pagar:&quot;&amp;cantidaddedonas" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="cantidaddedonas&gt;=50">
+                                <then>
+                                    <assign variable="cantidaddedonas" expression="cantidaddedonas*8"/>
+                                    <output expression="&quot;descuento y el total a pagar es:&quot;&amp;cantidaddedonas" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="cantidaddedonas&gt;=30">
+                                        <then>
+                                            <assign variable="cantidaddedonas" expression="cantidaddedonas*9"/>
+                                            <output expression="&quot;descuento y el total a pagar es:&quot;&amp;cantidaddedonas" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
