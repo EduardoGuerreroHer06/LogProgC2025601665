@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="a&#241;o bisiesto"/>
+        <attribute name="authors" value="eduar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 09:10:49 p. m."/>
+        <attribute name="created" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDMtMjY7MDc6MDc6NDEgcC4gbS47MzAyMw=="/>
+        <attribute name="edited" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDMtMjY7MDk6MTA6NDkgcC4gbS47MTszMTM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a&#241;o" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa el a&#241;o para saber si esbiestro o no&quot;" newline="True"/>
+            <input variable="a&#241;o"/>
+            <if expression="a&#241;o%4==0&amp;&amp;&#13;&#10;a&#241;o%100!=0||a&#241;o%400==0">
+                <then>
+                    <output expression="&quot;es a&#241;o&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no es a&#241;o bisiestro&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
