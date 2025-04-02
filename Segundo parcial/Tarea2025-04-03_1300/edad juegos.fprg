@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="edad juegos"/>
+        <attribute name="authors" value="eduar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 06:56:08 p. m."/>
+        <attribute name="created" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDE7MDY6NDY6NDMgcC4gbS47MzAyMQ=="/>
+        <attribute name="edited" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDE7MDY6NTY6MDggcC4gbS47MTszMTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;que-edad-tienes&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad&gt;=18">
+                <then>
+                    <output expression="&quot;500-PESOS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad&gt;=4||edad&gt;=17">
+                        <then>
+                            <output expression="&quot;200-PESOS&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad&gt;0">
+                                <then>
+                                    <output expression="&quot;GRATIS&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
