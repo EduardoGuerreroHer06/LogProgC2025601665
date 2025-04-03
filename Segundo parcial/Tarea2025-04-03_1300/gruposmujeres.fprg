@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="gruposmujeres"/>
+        <attribute name="authors" value="eduar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 04:55:28 p. m."/>
+        <attribute name="created" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDI7MDQ6NDE6NTkgcC4gbS47MzAyMg=="/>
+        <attribute name="edited" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDI7MDQ6NTU6MjggcC4gbS47MTszMTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <declare name="letra" type="String" array="False" size=""/>
+            <output expression="&quot;ingresa la letra&quot;" newline="True"/>
+            <input variable="letra"/>
+            <output expression="&quot;ingresa tu sexo&quot;" newline="True"/>
+            <input variable="sexo"/>
+            <if expression="sexo == &quot;m&quot; &amp;&amp; letra &lt; &quot;m&quot; || sexo == &quot;h&quot; &amp;&amp; letra &gt; &quot;n&quot;">
+                <then>
+                    <output expression="&quot;Eres Del Grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Eres Del Grupo B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
