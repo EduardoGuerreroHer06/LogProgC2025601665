@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pesodiagrama"/>
+        <attribute name="authors" value="eduar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-05 07:12:58 p. m."/>
+        <attribute name="created" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDU7MDY6NDQ6NDkgcC4gbS47MzAyOQ=="/>
+        <attribute name="edited" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDU7MDc6MTI6NTggcC4gbS47MTszMTMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="peso" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa tu peso&quot;" newline="True"/>
+            <input variable="peso"/>
+            <declare name="altura" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa tu altura&quot;" newline="True"/>
+            <input variable="altura"/>
+            <if expression="peso&lt;=18.4 ||peso=peso/altura*2">
+                <then>
+                    <output expression="&quot;Estas Bajo De Peso&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="peso&gt;=18.5||peso&gt;=24.9 ||peso=peso/altura*2">
+                        <then>
+                            <output expression="&quot;Estas Normal De Peso&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="peso&gt;=25.0||peso&gt;=29.9 ||peso=peso/altura*2">
+                                <then>
+                                    <output expression="&quot;Tienes Sobre Peso&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="peso&gt;=30.0||peso&gt;=34.4 ||peso=peso/altura*2">
+                                        <then>
+                                            <output expression="&quot;Tienes Obesidad Clase 1&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="peso&gt;=35.0||peso&gt;=39.9 ||peso=peso/altura*2">
+                                                <then>
+                                                    <output expression="&quot;Tienes Obesidad Clase 2&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="peso&gt;=40.0 ||peso=peso/altura*2">
+                                                        <then>
+                                                            <output expression="&quot;Tienes Obesidad Clase 3&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
