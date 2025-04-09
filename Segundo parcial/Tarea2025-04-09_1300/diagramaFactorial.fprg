@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="diagramaFactorial"/>
+        <attribute name="authors" value="eduar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 04:09:22 p. m."/>
+        <attribute name="created" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDg7MDM6NDg6NDEgcC4gbS47MzAyNQ=="/>
+        <attribute name="edited" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDg7MDQ6MDk6MjIgcC4gbS47MTszMTMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="e, z, y" type="Integer" array="False" size=""/>
+            <assign variable="y" expression="1"/>
+            <assign variable="z" expression="1"/>
+            <output expression="&quot;pon un numero&quot;" newline="True"/>
+            <input variable="e"/>
+            <while expression="y&lt;=e">
+                <assign variable="z" expression="z*1"/>
+                <assign variable="y" expression="y+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
