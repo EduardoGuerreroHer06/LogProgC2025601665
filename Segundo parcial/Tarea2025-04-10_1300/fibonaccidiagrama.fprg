@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonaccidiagrama"/>
+        <attribute name="authors" value="eduar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 04:11:12 p. m."/>
+        <attribute name="created" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDg7MDQ6MDk6MjkgcC4gbS47MzAyOQ=="/>
+        <attribute name="edited" value="ZWR1YXI7TEFQVE9QLTExTENNRjlFOzIwMjUtMDQtMDk7MDQ6MTE6MTIgcC4gbS47NTszMTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="h, j, s, count" type="Integer" array="False" size=""/>
+            <assign variable="h" expression="1"/>
+            <assign variable="j" expression="2"/>
+            <assign variable="s" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <while expression="count&lt;64">
+                <assign variable="s" expression="h+j"/>
+                <assign variable="h" expression="j"/>
+                <assign variable="j" expression="s"/>
+                <assign variable="count" expression="count+1"/>
+                <output expression="s" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
